@@ -1,0 +1,47 @@
+# Assignment 5
+# Module 6: Data Structures
+
+# -------- Task 1 --------
+def student_marks_task():
+    # Dictionary of student names and marks
+    marks = {
+        "Alice": 85,
+        "Bob": 78,
+        "John": 90,
+        "Rahul": 72
+    }
+
+    # Take name from user
+    name = input("Enter the student's name: ")
+
+    # Check if name exists
+    if name in marks:
+        print(name + "'s marks:", marks[name])
+    else:
+        print("Student not found.")
+
+
+# -------- Task 2 --------
+def list_slicing_task():
+    # Create list from 1 to 10
+    numbers = [1,2,3,4,5,6,7,8,9,10]
+
+    # Take first five elements
+    first_five = numbers[0:5]
+
+    # Reverse the first five elements
+    reversed_list = first_five[::-1]
+
+    # Print results
+    print("\nOriginal list:", numbers)
+    print("First five elements:", first_five)
+    print("Reversed list:", reversed_list)
+
+
+# -------- Main Program --------
+if __name__ == "__main__":
+    print("Task 1")
+    student_marks_task()
+
+    print("\nTask 2")
+    list_slicing_task()
